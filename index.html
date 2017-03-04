@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Mojojo Prototyping Tool</title>
+	<style type="text/css">
+		@font-face {
+		  font-family: 'Ubuntu';
+		  src: url('system/fonts/ubuntu-regular.ttf')  format('truetype');
+		}
+		@font-face {
+		  font-family: 'Ubuntu Light';
+		  src: url('system/fonts/ubuntu-light.ttf')  format('truetype');
+		}
+		html,body
+		{
+			height: 100%;
+			width: 100%;
+			margin: 0;
+			display: flex;
+			flex-direction: row;
+			align-items: center;
+			justify-content: center;
+			font-family: 'Ubuntu Light',Helvetica,Georgia,Arial,sans-serif;
+			font-weight: 200;
+			position: relative;
+			cursor: url('system/images/cursor.png') 39 39, auto;
+			cursor: -webkit-image-set(
+					url('system/images/cursor.png') 1x,
+					url('system/images/cursor@2x.png') 2x
+			) 39 39, auto;
+		}
+		::-webkit-scrollbar {
+		display: none;
+		}
+		.usemojs #FramerContextRoot-Default
+		{
+			display: none;
+		}
+	</style>
+</head>
+<body id="screen">
+	<script type="text/javascript" src="mojs/mo.min.js"></script>
+	<script type="text/javascript" src="mojs/mojs-player.min.js"></script>
+	<script type="text/javascript" src="framer/framer.js"></script>
+	<script type="text/javascript" src="utils.js" ></script>
+	<script type="text/javascript" src="app.js" ></script>
+</body>
+</html>
