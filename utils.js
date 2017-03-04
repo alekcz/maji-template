@@ -9,7 +9,7 @@ function promoteMojs()
 }
 function useFramer()
 {
-    var scale = 1 / window.devicePixelRatio;
+    var scale = 0.5;//we're simulating iOS 1 / window.devicePixelRatio;
     var width  = screen.width;
     var constant = window.devicePixelRatio*scale;
     if(width<=375)
@@ -23,7 +23,7 @@ function useFramer()
 }
 function useFramerWithCoffee()
 {
-    var scale = 1 / window.devicePixelRatio;
+    var scale = 0.5;//we're simulating iOS 1 / window.devicePixelRatio;
     var width  = screen.width;
     var constant = window.devicePixelRatio*scale;
     if(width<=375)
@@ -37,7 +37,7 @@ function useFramerWithCoffee()
 }
 function useMojs()
 {
-    var scale = (1 / window.devicePixelRatio);
+    var scale = 0.5;//we're simulating iOS 1 / window.devicePixelRatio;
     var width  = screen.width;
     var screenhandle = document.getElementById("screen");
     if(width>375)
