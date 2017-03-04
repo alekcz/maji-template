@@ -1,4 +1,4 @@
-var engine = "Mojs";
+var engine = "FramerWithCoffee";
 function promoteMojs()
 {
   for (var property in mojs) {
@@ -21,6 +21,20 @@ function useFramer()
     }
     engine = "Framer";
 }
+function useFramerWithCoffee()
+{
+    var scale = 1 / window.devicePixelRatio;
+    var width  = screen.width;
+    var constant = window.devicePixelRatio*scale;
+    if(width<=375)
+    {
+          var viewport = "width=device-width, height=device-height, initial-scale=" + constant + ", maximum-scale=" + constant + ", user-scalable=no"
+        var iOS = /iPad|iPhone|iPod/.test(navigator.platform)
+        //if (iOS) { viewport += ", shrink-to-fit=no" }
+        document.write("<meta name=\"viewport\" content=\"" + viewport + "\">")
+    }
+    engine = "FramerWithCoffee";
+}
 function useMojs()
 {
     var scale = (1 / window.devicePixelRatio);
@@ -39,12 +53,12 @@ function useMojs()
 
     }
     var framerContexthandle = document.getElementById('screen');
-    console.log(framerContexthandle);
     framerContexthandle.className += " usemojs";
     promoteMojs();
     engine = "Mojs";
 }
 function getEngine()
 {
+  console.log(engine)
   return engine;
 }
