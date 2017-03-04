@@ -1,7 +1,7 @@
-# Mojojo Template Project
-_Mojojo and this template are in active development and may not be stable_
+# Maji Template Project
+_Maji and this template are in active development and may not be stable_
 
-Mojojo allows you to prototype in Mo.js or Framer.js. This project is the template that new projects are created with.
+Maji allows you to prototype in Mo.js or Framer.js. This project is the template that new projects are created with.
 
 To prototype in Mo.js invoke `useMojs()`
 
@@ -30,7 +30,7 @@ The MIT License (MIT)
 Copyright (c) 2014 Koen Bok @koenbok
 
 
-## Mojojo and the Mojojo template
+## Maji and the Maji template
 MIT License
 
 Copyright (c) 2017 Alexander Oloo @alekcz alekcz@gmail.com
