@@ -5,7 +5,7 @@ Maji allows you to prototype in Mo.js or Framer.js. This project is the template
 
 To prototype in Mo.js invoke `useMojs()`
 
-To prototype in Mo.js invoke `useFramer()`
+To prototype in Framer.js invoke `useFramer()`
 
 The template comes bundled with Mo.js and Framer.js.
 
